@@ -15,13 +15,14 @@ int main() {
 
 	d = b * b - 4 * a * c;
 
-	x1 = (-b + sqrt(d)) / (2 * a);
-	x2 = (-b - sqrt(d)) / (2 * a);
-
-	if (d > 0)
-		printf("%lf\n%lf\n", x1, x2);
-	else if (d == 0)
-		printf("%lf\n", x1);
-	else
+	if (d < 0) {
 		printf("No roots\n");
+	} else if (d == 0) {
+		x1 = (-b + sqrt(d)) / (2 * a);
+		printf("%lf\n", x1);
+	} else {
+		x1 = (-b + sqrt(d)) / (2 * a);
+		x2 = (-b - sqrt(d)) / (2 * a);
+		printf("%lf\n%lf\n", x1, x2);
+	}
 }

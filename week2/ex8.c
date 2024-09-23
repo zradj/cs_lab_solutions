@@ -14,7 +14,7 @@ int main() {
 	double a, b, c;
 	scanf("%lf %lf %lf", &a, &b, &c);
 
-	if (a + b < c && a + c < b && b + c < a)
+	if (a + b > c && a + c > b && b + c > a)
 		printf("Possible\n");
 	else
 		printf("Impossible\n");
