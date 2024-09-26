@@ -22,3 +22,7 @@ You can use the following command to compile all source files in a certain week.
 If you want to remove all compiled files from a certain week, please use the following command (also in the top directory):
 
 `make clean WEEK={week number, ex. 2}`
+
+You can make changes to the files if you want. If you want to restore them to the original version, run the following command in the top directory:
+
+`git restore .`
