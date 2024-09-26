@@ -15,7 +15,7 @@ If you already have this repository installed, please use the following command 
 
 `git pull`
 
-You can use the following command to compile all source files in a certain week. The compiled files will appear in the "test" subfolder in that week's folder (ex. week2/test/). Please use this command in the top directory (cs_lab_solutions/):
+You can use the following command to compile all source files in a certain week. The compiled files will appear in the "test" subfolder in that week's folder (ex. `week2/test/`). Please use this command in the top directory (`cs_lab_solutions/`):
 
 `make WEEK={week number, ex. 2}`
 
