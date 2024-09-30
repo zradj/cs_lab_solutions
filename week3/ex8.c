@@ -4,11 +4,11 @@
  *
  *	Problem:
  *	
- *	Given a positive number n, print the nth Fibonacci number.
+ *	Given a positive number `n`, print the `n`th Fibonacci number.
  *	
  *	Solution:
  *	
- *	Since Fibonacci sequence is defined by `F_n = F_(n-1) + F_(n - 2)`,
+ *	Since Fibonacci sequence is defined by `F_n = F_(n-1) + F_(n-2)`,
  *	you should use three variables to generate the Fibonacci sequence.
  *	At the beginning, initialize the first two variables with the values of
  *	`F_1` and `F_2`. Use a loop to generate the subsequent Fibonacci numbers.
