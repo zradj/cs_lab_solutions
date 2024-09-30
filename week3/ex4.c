@@ -8,7 +8,7 @@
  *	
  *	Solution:
  *	
- *	Use a loop to scan each integer one-by-one and
+ *	Use a loop to scan each number one-by-one and
  *	add it to the separate sum variable.
  *
  */
