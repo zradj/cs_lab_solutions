@@ -21,19 +21,19 @@
 #include <stdio.h>
 
 int main() {
-    int n, i = 1, sum = 0;
-    long long product = 1;
-    scanf("%d", &n);
+	int n, i = 1, sum = 0;
+	long long product = 1;
+	scanf("%d", &n);
 
-    while (i <= n) { 
-        int xi = 3 * i - 1;
-        sum += xi;
-        product *= xi;
-        i++;
-    }
+	while (i <= n) { 
+		int xi = 3 * i - 1;
+		sum += xi;
+		product *= xi;
+		i++;
+	}
     
-    printf("%d\n", sum);
-    printf("%lld\n", product);
+	printf("%d\n", sum);
+	printf("%lld\n", product);
 
-    return 0;
+	return 0;
 }

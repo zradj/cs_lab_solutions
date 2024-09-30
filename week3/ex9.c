@@ -20,22 +20,22 @@
 #include <math.h>
 
 int main() {
-    double x, sinx, term;
-    int n, i = 2;
-    scanf("%lf %d", &x, &n);
+	double x, sinx, term;
+	int n, i = 2;
+	scanf("%lf %d", &x, &n);
 
-    sinx = term = x;
-    int sign = 1;
+	sinx = term = x;
+	int sign = 1;
 
-    while (i <= n) {
-    	term = (term * x * x) / ((2 * i - 1) * (2 * i - 2));
-        sign = -sign;
+	while (i <= n) {
+		term = (term * x * x) / ((2 * i - 1) * (2 * i - 2));
+		sign = -sign;
 		sinx += sign * term;
 		i++;
-    }
+	}
 
-    printf("Taylor Series: %.3lf\n", sinx);
+	printf("Taylor Series: %.3lf\n", sinx);
 	printf("math.h: %.3lf\n", sin(x));
 
-    return 0;
+	return 0;
 }

@@ -17,20 +17,20 @@
 #include <stdio.h>
 
 int main(){
-    int n, sum = 0;
-    scanf("%d",&n);
+	int n, sum = 0;
+	scanf("%d",&n);
 
-    if (n < 0) {
-        n = -n;
-    }
+	if (n < 0) {
+		n = -n;
+	}
 
-    while (n>0) {
-        int digit = n % 10;
-        if (digit % 2 == 0) {
-            sum += digit;
-        }
-        n = n / 10;
-    }
+	while (n>0) {
+		int digit = n % 10;
+		if (digit % 2 == 0) {
+			sum += digit;
+		}
+		n = n / 10;
+	}
 
-    printf("%d\n", sum);
+	printf("%d\n", sum);
 }
