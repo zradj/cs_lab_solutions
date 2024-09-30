@@ -5,13 +5,13 @@
  *	Problem:
  *	
  *	Taylor series or Taylor expansion of a function is an infinite sum of the terms that 
- *  are expressed in terms of the function's derivatives at a single point. There are some 
- *  commonly used Taylor Series. 
- *  Given a floating-point value `x` and a positive integer `n`. Find the sin(x) by applying Taylor 
- *  series for sine and use n as the number of terms to be accumulated. 
- *	
+ *	are expressed in terms of the function's derivatives at a single point. There are some 
+ *	commonly used Taylor Series. 
+ *	Given a floating-point value `x` and a positive integer `n`. Find the sin(x) by applying Taylor 
+ *	series for sine and use n as the number of terms to be accumulated. 
+ *
  *	Solution:
- *	
+ *
  *	---
  *
  */

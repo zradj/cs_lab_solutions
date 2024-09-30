@@ -1,20 +1,20 @@
 /*
  *
- *  Author: Elnama Mammadova
+ *	Author: Elnama Mammadova
  *
- *  Problem:
+ *	Problem:
  *
- *  Given a sequence represented by: `x_i = 3 ∗ i − 1`
- *  So, the elements of the sequence are `[2, 5, 8, 11, ….]`
- *  Write a program to find out the sum and the product of the first n elements of the sequence 
- *  given an integer in range `[1, ∞)`.
+ *	Given a sequence represented by: `x_i = 3 ∗ i − 1`
+ *	So, the elements of the sequence are `[2, 5, 8, 11, ….]`
+ *	Write a program to find out the sum and the product of the first n elements of the sequence 
+ *	given an integer in range `[1, ∞)`.
  *
- *  Solution:
+ *	Solution:
  *
- *  Declare an integer `i` as a counter, and initialize it to 1.
- *  Iterate `i` from 1 to `n`. In each iteration, calculate the `i`-th element using the formula given.
- *  Update the sum and the product of all elements from the 1st to the `i`-th element.
- *  Finally, print the sum and product of the elements.
+ *	Declare an integer `i` as a counter, and initialize it to 1.
+ *	Iterate `i` from 1 to `n`. In each iteration, calculate the `i`-th element using the formula given.
+ *	Update the sum and the product of all elements from the 1st to the `i`-th element.
+ *	Finally, print the sum and product of the elements.
  *
  */
 

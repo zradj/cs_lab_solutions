@@ -9,8 +9,8 @@
  *	Solution:
  *	
  *	The problem can be solved using a while loop. Use the loop to repeatedly check the last digit of the number. 
- *  If the digit is even, add it to the sum.
- *  After each check, remove the last digit of the number until all digits are processed (when `n` becomes zero).
+ *	If the digit is even, add it to the sum.
+ *	After each check, remove the last digit of the number until all digits are processed (when `n` becomes zero).
  *
  */
 
