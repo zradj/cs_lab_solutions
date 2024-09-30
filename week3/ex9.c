@@ -34,8 +34,8 @@ int main() {
 		i++;
 	}
 
-	printf("Taylor Series: %.3lf\n", sinx);
-	printf("math.h: %.3lf\n", sin(x));
+	printf("Taylor Series: %lf\n", sinx);
+	printf("math.h: %lf\n", sin(x));
 
 	return 0;
 }
