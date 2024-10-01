@@ -28,7 +28,7 @@ int main() {
 		You can use the key combination `Control + D` to insert an EOF into the console.
 
 		Note: `Control + C`, on the other hand, terminates the process, so the result may not be printed.
-	*/
+	 */
 	while (scanf("%lf %lf", &x, &y) != -1) {
 		dist = sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0));
 
