@@ -15,9 +15,9 @@
  *  compute i=0 as a base case for sinx and term.
  *  In a while loop compute (i)^(-1) by multiplying sign with -1 in each iteration
  *  compute the term by multiplying it with (x * x) /((2*i)*(2 * i + 1)) in each iteration
- * find the sum by adding the term multiplied with the sign in each iteration
- * iterate the counter
- * print your computed sum and also sin(x) computed by math.h function to see their comparison 
+ *  find the sum by adding the term multiplied with the sign in each iteration
+ *  iterate the counter
+ *  print your computed sum and also sin(x) computed by math.h function to see their comparison 
  */
 
 #include <stdio.h>
