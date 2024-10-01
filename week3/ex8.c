@@ -28,8 +28,7 @@ int main() {
 	if (n == 1)
 		printf("1\n");
 	else {
-		n -= 2;
-		int i = 0;
+		int i = 2;
 		while (i < n) {
 			f1 = f2;
 			f2 = f3;

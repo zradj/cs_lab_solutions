@@ -20,12 +20,12 @@
 
 int main() {
 	double x, y, x0, y0, r, dist;
-	scanf("%lf %lf %lf", &x0, &y0, &r);
+	scanf("%lf%lf%lf", &x0, &y0, &r);
 
 	/* 
 		Normally, scanf returns the number of elements it read.
 		However, -1 is returned when scanf encounters the EOF (end-of-file).
-		You can use the key combination Control + C to insert an EOF into the console.
+		You can use the key combination Control + D to insert an EOF into the console.
 	*/
 	while (scanf("%lf %lf", &x, &y) != -1) {
 		dist = sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0));

@@ -17,15 +17,15 @@
 #include <stdio.h>
 
 int main(){
-	int n, sum = 0;
-	scanf("%d",&n);
+	int n, digit, sum = 0;
+	scanf("%d", &n);
 
 	if (n < 0) {
 		n = -n;
 	}
 
 	while (n>0) {
-		int digit = n % 10;
+		digit = n % 10;
 		if (digit % 2 == 0) {
 			sum += digit;
 		}

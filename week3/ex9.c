@@ -26,7 +26,7 @@
 int main() {
 	double x, sinx, term;
 	int n, i = 1;
-	scanf("%lf %d", &x, &n);
+	scanf("%lf%d", &x, &n);
 
 	sinx = term = x;
 	int sign = 1;

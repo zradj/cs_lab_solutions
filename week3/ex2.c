@@ -19,7 +19,7 @@
 
 int main() {
 	int a, b, k, sum = 0;
-	scanf("%d %d %d", &a, &b, &k);
+	scanf("%d%d%d", &a, &b, &k);
 
 	/* Swap `a` and `b` if `a > b` */
 	if (a > b) {
