@@ -26,6 +26,12 @@ int main() {
 	scanf("%d", &n);
 
 	while (i <= n) {
+		/*
+			It is crucial to use `1.0` instead of `1`.
+			With `1`, C performs integer division
+			(since `i` is also an integer) and the result is always 0.
+			With `1.0`, `i` is converted to `double`.
+		 */
 		sum += 1.0 / i;
 		i++;
 	}

@@ -22,7 +22,6 @@ int main() {
 
 	scanf("%d", &n);
 
-	/* Counter. */
 	int i = 0;
 	while (i < n) {
 		scanf("%lf", &x);
