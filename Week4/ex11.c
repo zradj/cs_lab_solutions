@@ -21,25 +21,25 @@
 
 int main()
 {
-	int num, currentDigit, powerSum = 0, cnt = 0;
-	scanf("%d", &num);
-	for (int i = num; i > 0; i /= 10)
-	{
-		cnt++;
-	}
-	for (int i = num; i > 0; i /= 10)
-	{
-		currentDigit = i % 10;
-		powerSum += pow(currentDigit, cnt);
-	}
-	if (powerSum == num)
-	{
-		printf("YES\n");
-	}
-	else
-	{
-		printf("NO\n");
-	}
+    int num, currentDigit, powerSum = 0, cnt = 0;
+    scanf("%d", &num);
+    for (int i = num; i > 0; i /= 10)
+    {
+        cnt++;
+    }
+    for (int i = num; i > 0; i /= 10)
+    {
+        currentDigit = i % 10;
+        powerSum += pow(currentDigit, cnt);
+    }
+    if (powerSum == num)
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
 
-	return 0;
+    return 0;
 }
