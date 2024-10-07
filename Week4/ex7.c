@@ -5,7 +5,7 @@
  *	Problem:
  *
  *	Given a sequence of integers. Find the sum of even and sum of odd elements
- *   with using a single repetition and print them separately.
+ *     with using a single repetition and print them separately.
  *
  *
  *	Solution:
