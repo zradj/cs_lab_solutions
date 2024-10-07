@@ -11,7 +11,7 @@
  *
  *	Solution:
  *
- *	Use a for loop to count the number of digits.
+ *  Use a for loop to count the number of digits.
  *  Use another for loop to calculate the sum of digits each raised to the power of digitCount
  *  Check if the calculated sum equals the input value
  */
