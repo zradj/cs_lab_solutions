@@ -4,11 +4,14 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given some triplets of integers `a`, `b`, and `c` until EOF.
+ *	Calculate and print the sum of the elements in the range `[a, b]`
+ *	that are divisible by `c` without a remainder.
  *	
  *	Solution:
  *	
- *	---
+ *	This problem is almost identical to the Exercise 2 from this week.
+ *	The only difference is the implementation of reading until EOF.
  *
  */
 

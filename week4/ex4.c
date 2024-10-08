@@ -4,11 +4,13 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given an integer `n` and `n` other floating-point numbers.
+ *	Find the sum of all numbers given by the user.
  *	
  *	Solution:
  *	
- *	---
+ *	Use a `for` loop to scan each number one-by-one and
+ *	add it to the separate sum variable.
  *
  */
 
