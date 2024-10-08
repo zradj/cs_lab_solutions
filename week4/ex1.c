@@ -13,6 +13,7 @@
  *
  *	Use a for loop to iterate `i` from 1 to `n`. In each iteration, calculate the `i`-th element using the formula given.
  *	Update the sum and the product of all elements from the 1st to the `i`-th element in each iteration
+ *
  */
 
 #include <stdio.h>

@@ -11,7 +11,9 @@
  *
  *
  *	Solution is provided as comments in the code for better understanding.
+ *
  */
+
 #include <stdio.h>
 
 int main()
