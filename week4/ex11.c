@@ -8,7 +8,6 @@
  *	A number is called Armstrong number when then number is equal to the sum of its own digits each raised
  *	to the power of the number of digits.
  *
- *
  *	Solution:
  *
  *	Use a for loop to count the number of digits.
@@ -20,25 +19,21 @@
 #include <stdio.h>
 #include <math.h>
 
-int main()
-{
+int main() {
 	int num, currentDigit, powerSum = 0, cnt = 0;
 	scanf("%d", &num);
-	for (int i = num; i > 0; i /= 10)
-	{
+	for (int i = num; i > 0; i /= 10) {
 		cnt++;
 	}
-	for (int i = num; i > 0; i /= 10)
-	{
+
+	for (int i = num; i > 0; i /= 10) {
 		currentDigit = i % 10;
 		powerSum += pow(currentDigit, cnt);
 	}
-	if (powerSum == num)
-	{
+
+	if (powerSum == num) {
 		printf("YES\n");
-	}
-	else
-	{
+	} else {
 		printf("NO\n");
 	}
 

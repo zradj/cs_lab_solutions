@@ -11,7 +11,7 @@
  *	
  *	Use a loop to iterate through the range. Check if each element is
  *	divisible by `k` without a remainder and add it to the `sum` variable
- *	if it is.
+ *	if it is. Swap `a` and `b` if `a > b`.
  *
  */
 

@@ -9,24 +9,20 @@
  *
  *	Solution:
  *
- *	Use a single for loop to input the numbers and add them to the appropriate sum variable (either even or odd).
+ *	Use a single `for` loop to input the numbers and add them to the appropriate sum variable (either even or odd).
  *
  */
 
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	int num;
 	int sum_even = 0, sum_odd = 0;
-	for (; scanf("%d", &num) != EOF;)
-	{
-		if (num % 2 == 0)
-		{
+	for (; scanf("%d", &num) != EOF;) {
+		if (num % 2 == 0) {
 			sum_even += num;
 		}
-		else
-		{
+		else {
 			sum_odd += num;
 		}
 	}

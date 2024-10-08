@@ -11,21 +11,19 @@
  *
  *	Solution:
  *
- *	Use a for loop to iterate `i` from 1 to `n`. In each iteration, calculate the `i`-th element using the formula given.
- *	Update the sum and the product of all elements from the 1st to the `i`-th element in each iteration
+ *	Use a `for` loop to iterate `i` from 1 to `n`. In each iteration, calculate the `i`-th element using the formula given.
+ *	Update the sum and the product of all elements from the 1st to the `i`-th element in each iteration.
  *
  */
 
 #include <stdio.h>
 
-int main()
-{
+int main() {
 	int n, sum = 0, xi;
 	long long product = 1;
 	scanf("%d", &n);
 
-	for (int i = 1; i <= n; i++)
-	{
+	for (int i = 1; i <= n; i++) {
 		xi = 2 * i + 1;
 		sum += xi;
 		product *= xi;

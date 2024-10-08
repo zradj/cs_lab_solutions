@@ -10,7 +10,7 @@
  *
  *	Solution:
  *
- *	Use a for loop to iterate from `i = 1` to `i = n`.
+ *	Use a `for` loop to iterate from `i = 1` to `i = n`.
  *	In each iteration, update the sum using the formula `sum += 1.0 / i`.
  *	The use of 1.0 ensures that division is performed in floating-point,
  *	preventing integer division errors that would lead to incorrect results.
