@@ -11,7 +11,7 @@
  *	
  *	Use a `for` loop to iterate through the range. Check if each element is
  *	divisible by `k` without a remainder and add it to the `sum` variable
- *	if it is.
+ *	if it is. Swap `a` and `b` if `a > b`.
  *
  */
 
@@ -21,6 +21,12 @@ int main() {
 	int a, b, k;
 	long long sum = 0;
 	scanf("%d%d%d", &a, &b, &k);
+
+	if (a > b) {
+		int c = a;
+		a = b;
+		b = c;
+	}
 
 	/*
 		If you do not need some part in the `for` loop,
