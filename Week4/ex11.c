@@ -1,15 +1,15 @@
 /*
  *
- *	Author: Elnama Mammadova
+ *  Author: Elnama Mammadova
  *
- *	Problem:
+ *  Problem:
  *
  *  A positive integer is given. Write a program to check whether the number is Armstrong number or not.
  *  A number is called Armstrong number when then number is equal to the sum of its own digits each raised
  *  to the power of the number of digits.
  *
  *
- *	Solution:
+ *  Solution:
  *
  *  Use a for loop to count the number of digits.
  *  Use another for loop to calculate the sum of digits each raised to the power of digitCount

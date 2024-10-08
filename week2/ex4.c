@@ -1,8 +1,8 @@
 /*
- *	Solution:
+ *  Solution:
  *
- *	Implement the formulas directly using sqrt() from `math.h`
- *	for square root. Use conditionals to print the result correctly.
+ *  Implement the formulas directly using sqrt() from `math.h`
+ *  for square root. Use conditionals to print the result correctly.
  *
  */
 

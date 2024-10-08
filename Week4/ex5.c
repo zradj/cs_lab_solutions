@@ -1,16 +1,16 @@
 /*
  *
- *	Author: Elnama Mammadova
+ *    Author: Elnama Mammadova
  *
- *	Problem:
+ *    Problem:
  *
- *  There are two runners that run on a road. Write a program that given the initial
- *  coordinates of the runners, and the speeds (size of step) prints the coordinate and time
- *  taken where they will meet or pass each other OR prints NEVER in case, they are running
- *  from each other, or they are running towards the same direction but the one behind has not enough speed.
+ *    There are two runners that run on a road. Write a program that given the initial
+ *    coordinates of the runners, and the speeds (size of step) prints the coordinate and time
+ *    taken where they will meet or pass each other OR prints NEVER in case, they are running
+ *    from each other, or they are running towards the same direction but the one behind has not enough speed.
  *
  *
- *	Solution is provided as comments in the code for better understanding.
+ *    Solution is provided as comments in the code for better understanding.
  */
 #include <stdio.h>
 
