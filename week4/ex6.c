@@ -42,7 +42,7 @@ int main() {
 			Commas allow us to write multiple variable assignments
 			in one statement.
 
-			For instance, the first line after this comment is idnetical to
+			For instance, the first line after this comment is identical to
 
 			if (x > max) {
 				max = x;
