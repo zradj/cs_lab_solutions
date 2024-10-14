@@ -5,7 +5,7 @@
  *	Problem:
  *	
  *	Write a program that takes an integer `n`, followed by `n` number of
- *	digits [0-9], which represents a big number. Decrease this number
+ *	digits `[0-9]`, which represents a big number. Decrease this number
  *	by 1 and print the resulting number in the form of an array.
  *	
  *	Solution:

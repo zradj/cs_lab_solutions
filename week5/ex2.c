@@ -4,8 +4,8 @@
  *
  *	Problem:
  *	
- *	Given an array of integers. Write a program that takes an integer n and followed
- *	by n number of integers and print the elements that are less than their neighboring
+ *	Given an array of integers. Write a program that takes an integer `n` and followed
+ *	by `n` number of integers and print the elements that are less than their neighboring
  *	elements.
  *	
  *	Solution:
