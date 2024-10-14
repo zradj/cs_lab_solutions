@@ -41,6 +41,9 @@ int main() {
 		if (x < min) min = x, min_cnt = 1;
 	}
 
-	sum -= (max * max_cnt + min * min_cnt);
+	/* If `max == min`, we subtract only one of them to avoid double subtraction. */
+	if (max != min) sum -= (max * max_cnt + min * min_cnt);
+	else sum -= max * max_cnt;
+
 	printf("%d\n", sum);
 }
