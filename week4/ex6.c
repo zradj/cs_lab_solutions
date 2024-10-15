@@ -37,6 +37,18 @@ int main() {
 	max = min = x;
 	for (int i = 2; i <= n; i++) {
 		scanf("%d", &x);
+
+		/*
+			Commas allow us to write multiple variable assignments
+			in one statement.
+
+			For instance, the first line after this comment is identical to
+
+			if (x > max) {
+				max = x;
+				max_p = i;
+			}
+		 */
 		if (x > max) max = x, max_p = i;
 		if (x < min) min = x, min_p = i;
 	}

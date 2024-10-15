@@ -23,6 +23,9 @@ int main() {
 	/*
 		If you are confused by this, please see
 		the comment in the solution for Exercise 10, Week 3.
+
+		Note that `while (scanf("%d%d%d", &a, &b, &c) == 3)` is also possible
+		and is identical to the one below.
 	 */
 	while (scanf("%d%d%d", &a, &b, &c) != -1) {
 		for (; a <= b; a++)
