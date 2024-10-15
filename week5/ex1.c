@@ -24,14 +24,19 @@ int main() {
 	float sum = 0;
 	scanf("%d", &n);
 	int arr[n];
+
 	for (int i = 0; i < n; i++) {
 		scanf("%d", &arr[i]);
 		sum += arr[i];
 	}
+
 	float avg = sum / n;
+	
 	for (int i = 0; i < n; i++) {
 		if (arr[i] < avg) {
 			printf("%d ", arr[i]);
 		}
 	}
+
+	printf("\n");
 }

@@ -34,18 +34,18 @@ int main() {
 	int arr[n];
 	int cnt[1001];
 
-	for(int i = 1; i < 1001; i++) {
+	for (int i = 1; i < 1001; i++) {
 		cnt[i] = 0;
  	}
 
-	for(int i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		scanf("%d", &arr[i]);
 		cnt[arr[i]]++;
 	}
 
-	for (int i = 0;i < n; i++) {
-		if(cnt[arr[i]] == 1) {
-			printf("%d", arr[i]);
+	for (int i = 0; i < n; i++) {
+		if (cnt[arr[i]] == 1) {
+			printf("%d\n", arr[i]);
 			break;
 		}
 	}

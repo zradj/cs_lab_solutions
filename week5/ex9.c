@@ -25,7 +25,7 @@
  *	Loop through the generated Fibonacci numbers.
  *	If a Fibonacci number is within the range `[x, y]`, print it and set `found` to 1.
  *	After checking all Fibonacci numbers, if none were found, print "DO NOT EXIST".
- *	Otherwise, print a newline for formatting.
+ *	Otherwise, print a new line for formatting.
  * 
  */
 
@@ -37,6 +37,7 @@ int main() {
 	fib[0] = 0;
 	fib[1] = 1;
 	int count = 2;
+
 	while (1) {
 		fib[count] = fib[count - 1] + fib[count - 2];
 		if (fib[count] > 3000) {
@@ -48,12 +49,14 @@ int main() {
 	int x, y;
 	while (scanf("%d%d", &x, &y) != EOF) {
 		int found = 0;
+
 		for (int i = 0; i < count; i++) {
 			if (fib[i] >= x && fib[i] <= y) {
 				printf("%d ", fib[i]);
 				found = 1;
 			}
 		}
+
 		if (found==0) {
 			printf("DO NOT EXIST\n");
 		} else {
