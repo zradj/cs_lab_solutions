@@ -28,7 +28,7 @@ int main() {
 		Please see the first comment in the solution to Exercise 6
 		from Week 4 if you are confused about this.
 	 */
-	max = min = x, min_cnt = max_cnt = 1;
+	max = min = x, max_cnt = min_cnt = 1;
 	sum += x;
 
 	for (int i = 1; i < n; i++) {

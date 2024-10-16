@@ -15,6 +15,10 @@
  *	After the sorting, use a `for` loop to count the elements and print them (more details in the
  *	comments below).
  *
+ *	Note: Since the range is not specified in the problem statement,
+ *	counting sort is not a reasonable solution choice for this problem. However, you may want to
+ *	see `ex6_alt.c`, which assumes a fixed range.
+ *
  */
 
 #include <stdio.h>

@@ -46,18 +46,13 @@ int main() {
 	printf("[");
 	for (int i = 0; i < n; i++) {
 		/*
-			`flag` helps us skip all leading zeros. If `flag` is 0, it
-			means that we have not yet encountered a non-zero digit
-			to begin the number. When we encounter such a number,
-			we print it and set `flag` to 1. However, it is also possible
-			that the only digit in the array is 0 (for instance, if the given
-			number was 1). The condition `|| i == n - 1` below considers this case.
+			Here we search for the first non-zero element starting from the left.
+			If such an element is not found, the answer is `[0]`. Otherwise,
+			starting from the found index, we print the numbers.
 		 */
 		if (flag == 0 && (nums[i] != 0 || i == n - 1)) {
 			printf("%d", nums[i]);
 			flag = 1;
-
-		/* Note that for all subsequent elements, we print a comma and a space. */
 		} else if (flag != 0) {
 			printf(", %d", nums[i]);
 		}
