@@ -4,24 +4,24 @@
  *
  *	Problem:
  *
- *	Given an array of integers. Write a program that takes an integer `n` and followed 
+ *	Given an array of integers. Write a program that takes an integer `n` and followed
  *	by `n` number of integers. Print the elements in the following order:
- *	All the minimums first, all the maximums last, the rest of the elements in the very same 
+ *	All the minimums first, all the maximums last, the rest of the elements in the very same
  *	order they appear in the original array.
  *
  *	Solution:
  *
  *	Input the number of elements, `n`
  *	Declare an array of size n to store the elements.
- *	Initialize the minimum and maximum values with the first element of the array.
+ *	Initialize the minimum and maximum values with the first element of the array
+ *	Declare counter variables for each of min and max variables: minCount, maxCount
  *	Loop through the array starting from the second element to find the minimum and maximum values,
- *	Use if statements to find min and max values 
- *	Loop through the array to print all occurrences of the minimum value.
+ *	Use if statements to find min and max values and count their occurences
+ *	Use a loop to print minimum element minCount times
  *	Loop through the array to print all elements that are neither minimum nor maximum.
- *	Loop through the array to print all occurrences of the maximum value.
+ *	Use a loop to print the maximum element maxCount times
  *
  */
-
 
 #include <stdio.h>
 
@@ -29,13 +29,12 @@ int main() {
 	int n, i;
 	scanf("%d", &n);
 	int arr[n];
-
+	int maxCount = 0, minCount = 0;
 	for (i = 0; i < n; i++) {
 		scanf("%d", &arr[i]);
 	}
-
-	int min = arr[0],max = arr[0];   
-	for (i = 1; i < n; i++) {
+	int min = arr[0], max = arr[0];
+	for (int i = 0; i < n; i++) {
 		if (arr[i] < min) {
 			min = arr[i];
 		}
@@ -43,23 +42,26 @@ int main() {
 			max = arr[i];
 		}
 	}
-
-	for (i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		if (arr[i] == min) {
-			printf("%d ", arr[i]);
+			minCount++;
+		}
+		if (arr[i] == max) {
+			maxCount++;
 		}
 	}
 
+	for (i = 0; i < minCount; i++) {
+		printf("%d ", min);
+	}
 	for (i = 0; i < n; i++) {
 		if (arr[i] != min && arr[i] != max) {
 			printf("%d ", arr[i]);
 		}
 	}
 
-	for (i = 0; i < n; i++) {
-		if (arr[i] == max) {
-			printf("%d ", arr[i]);
-		}
+	for (i = 0; i < maxCount; i++) {
+		printf("%d ", max);
 	}
 
 	printf("\n");
