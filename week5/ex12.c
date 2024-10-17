@@ -24,7 +24,7 @@
 #include <stdio.h>
 
 int main() {
-	int n, flag = 0;
+	int n, start_ind = 0;
 	scanf("%d", &n);
 
 	int nums[n];
@@ -43,19 +43,25 @@ int main() {
 		nums[i] = 9;
 	}
 
-	printf("[");
+	/* Here we search for the index of the first non-zero element. */
 	for (int i = 0; i < n; i++) {
-		/*
-			Here we search for the first non-zero element starting from the left.
-			If such an element is not found, the answer is `[0]`. Otherwise,
-			starting from the found index, we print the numbers.
-		 */
-		if (flag == 0 && (nums[i] != 0 || i == n - 1)) {
-			printf("%d", nums[i]);
-			flag = 1;
-		} else if (flag != 0) {
-			printf(", %d", nums[i]);
+		if (nums[i] != 0) {
+			start_ind = i;
+			break;
 		}
 	}
-	printf("]\n");
+
+	/* If the such element is not found, it means that we have `[0]`. */
+	if (start_ind >= n) {
+		printf("[0]\n");
+		return 0;
+	}
+
+	printf("[");
+
+	for (int i = start_ind; i < n; i++)
+		printf("%d, ", nums[i]);
+
+	/* `\b\b` is to remove the last comma and space, which are redundant. */
+	printf("\b\b]\n");
 }
