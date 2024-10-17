@@ -44,12 +44,8 @@ int main() {
 	}
 
 	/* Here we search for the index of the first non-zero element. */
-	for (int i = 0; i < n; i++) {
-		if (nums[i] != 0) {
-			start_ind = i;
-			break;
-		}
-	}
+	while (start_ind < n && nums[start_ind] == 0)
+		start_ind++;
 
 	/* If the such element is not found, it means that we have `[0]`. */
 	if (start_ind >= n) {
