@@ -18,6 +18,12 @@
 #include <stdio.h>
 
 int main() {
+	/*
+		The size of the string is 1002 because one character is reserved for the
+		null terminator (`\0`) and another character is reserved for the newline character
+		(`\n`) that `fgets` produces. Thus, by setting the size to 1002, 1000 characters will
+		be reserved for the actual input.
+	 */
 	char str[1002];
 	int res = 1;
 	fgets(str, 1001, stdin);
