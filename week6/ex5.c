@@ -10,7 +10,7 @@
  *
  *	Solution:
  *	Firstly, find the length of the given string.
- *	Use a for loop to reverse the given string and copy the reversed input string into the new string variable `rev`.
+ *	Use a `for` loop to reverse the given string and copy the reversed input string into the new string variable `rev`.
  *  Use '\0' to terminate the new string `rev`, because both strings must be terminated for `strcmp()` to work.
  *	Compare the two strings using the `strcmp()` function, and print "YES" or "NO" based on the result of the comparison.
  *

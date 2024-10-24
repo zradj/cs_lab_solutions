@@ -26,7 +26,15 @@
 #include <string.h>
 
 int main() {
-	char str[1002], search[1002], target[1002], res[1000002];
+	/*
+		The length of res is 1,000,001 is to account for the worst-case scenario.
+		Let the input string consist of 1,000 same characters, say 'a', and let
+		`search` be equal to 'a', and `target` be equal to a text consisting of 1,000
+		characters. In this case, every character in the input string will be replaced by
+		1,000 new characters, so the length of the result will be 1,000,000.
+		Thus the size of `res` must be 1,000,000 + 1 (the null terminator).
+	 */
+	char str[1002], search[1002], target[1002], res[1000001];
 	int str_pos = 0;
 	res[0] = '\0';
 	

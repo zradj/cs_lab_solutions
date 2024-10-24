@@ -8,10 +8,9 @@
  *	consists of the same tokens separated by _ (underscore)
  *
  *	Solution:
- *	Use a while loop to check if str[i] equals '#'. If so, assign '_' to newstr[i]; otherwise, copy the value of str[i] to newstr[i].
- *	Increment the counter i in each iteration.
- *	Assign newstr[i] = '\0' to terminate the string.
- *	Print the resultant string.
+ *	Use a while loop to check if `str[i]` equals '#'. If so, assign '_' to `newstr[i]`;
+ *  otherwise, copy the value of `str[i]` to `newstr[i]`. Increment the counter `i` in each iteration.
+ *	Assign `newstr[i] = '\0'` to terminate the string. Print the resultant string.
  *
  */
 
