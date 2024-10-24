@@ -12,8 +12,8 @@
  *
  *	Find the length of the given string.
  *	Declare a flag to track if the string is a palindrome.
- *	If the last character is '\n', decrement the length variable by 1 and update the termination position of the string.
- *	Compare the string from both the start and end, iterating up to length/2.
+ *	If the last character is `\n`, decrement the length variable by 1 and update the termination position of the string.
+ *	Compare the string from both the start and end, iterating up to `length / 2`.
  *	If a mismatch is found, set the flag's value to 0.
  *	Print "YES" if the flag indicates the string is a palindrome, otherwise print "NO".
  *
