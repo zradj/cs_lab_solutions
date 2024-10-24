@@ -27,7 +27,7 @@
 
 int main() {
 	/*
-		The length of res is 1,000,001 is to account for the worst-case scenario.
+		The length of `res` (1,000,001) is to account for the worst-case scenario.
 		Let the input string consist of 1,000 same characters, say 'a', and let
 		`search` be equal to 'a', and `target` be equal to a text consisting of 1,000
 		characters. In this case, every character in the input string will be replaced by
