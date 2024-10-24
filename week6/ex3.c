@@ -30,7 +30,7 @@ int main() {
         i++;
     }
     newstr[i] = '\0';
-    printf("%s", newstr);
+    printf("%s\n", newstr);
 
     return 0;
 }

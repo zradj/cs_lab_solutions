@@ -33,7 +33,7 @@ int main() {
 		newstr[cnt++] = str[i];
 	}
 	newstr[cnt] = '\0'; 
-	printf("%s", newstr);
+	printf("%s\n", newstr);
 
 	return 0;
 }
