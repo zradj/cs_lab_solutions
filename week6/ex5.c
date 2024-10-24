@@ -8,35 +8,43 @@
  *	the same backwards as forwards. E.g., “ana”, “ata”, 1991, “racecar”, etc. Given a
  *	sentence/word/number, print YES if that is palindrome, NO otherwise.
  *
- *	Solution:
- *	Firstly, find the length of the given string.
- *	Use a `for` loop to reverse the given string and copy the reversed input string into the new string variable `rev`.
- *  Use '\0' to terminate the new string `rev`, because both strings must be terminated for `strcmp()` to work.
- *	Compare the two strings using the `strcmp()` function, and print "YES" or "NO" based on the result of the comparison.
- *
+ *  Solution:
+ *	Find the length of the given string.
+ *	Declare a flag to track if the string is a palindrome.
+ *	If the last character is '\n', decrement the length variable by 1 and update the termination position of the string.
+ *	Compare the string from both the start and end, iterating up to length/2.
+ *	If a mismatch is found, set the flag's value to 0.
+ *	Print "YES" if the flag indicates the string is a palindrome, otherwise print "NO".
  */
 
+
+#include <stdio.h>
 #include <stdio.h>
 #include <string.h>
 
 int main() {
-	char str[1002], rev[1002];
-	int length = 0;
-	int cnt = 0;
-	fgets(str, sizeof(str), stdin);
-	length = strlen(str);
-	if (str[length - 1] == '\n') {
-		str[length - 1] = '\0';
-		length--;
-	}
-	for (int i = length - 1; i >= 0; i--) {
-		rev[cnt++] = str[i];
-	}
-	rev[cnt] = '\0';
-	if (strcmp(rev, str) == 0)
-		printf("YES\n");
-	else
-		printf("NO\n");
+    char str[1002];
+    int length = 0;
+    int isPalindrome = 1;
 
-	return 0;
+    fgets(str, sizeof(str), stdin);
+    length = strlen(str);
+    if (str[length - 1] == '\n') {
+        str[length - 1] = '\0';
+        length--;
+    }
+    for (int i = 0; i < length / 2; i++) {
+        if (str[i] != str[length - 1 - i]) {
+            isPalindrome = 0;
+            break;
+        }
+    }
+
+    if (isPalindrome)
+        printf("YES\n");
+    else
+        printf("NO\n");
+
+    return 0;
 }
+
