@@ -7,7 +7,7 @@
  *	Given a text and search value(target) in separate lines. Check if the target is in 
  *	the text or not. If yes, print the starting index of the first occurence, if no, print an 
  *	appropriate message.
- * 
+ *
  *	Solution is provided as comments inside the code.
  *
  */
@@ -44,7 +44,7 @@ int main() {
 				return 0;
 			}
 		} 
-	   	// If there's a mismatch, reset j and shift back to text[i-j+1] to check if i-j+1 could be the starting index for the target.
+		// If there's a mismatch, reset j and shift back to text[i-j+1] to check if i-j+1 could be the starting index for the target.
 		// This ensures that partial matches are correctly handled, as in cases like text="aab" and target="ab".
 
 
