@@ -42,10 +42,10 @@ int main() {
 	fgets(search, 1001, stdin);
 	fgets(target, 1001, stdin);
 
-	int search_len = strlen(search), res_len = 0;
+	int str_len = strlen(str), search_len = strlen(search), res_len = 0;
 
-	if (str[strlen(str) - 1] == '\n')
-		str[strlen(str) - 1] = '\0';
+	if (str[str_len - 1] == '\n')
+		str[str_len - 1] = '\0', str_len--;
 
 	if (search[search_len - 1] == '\n')
 		search[search_len - 1] = '\0', search_len--;
@@ -54,7 +54,12 @@ int main() {
 		target[strlen(target) - 1] = '\0';
 
 	int i = 0;
-	while (str[i] != '\0') {
+
+	/*
+		We continue while the length of the remaining portion of the input
+		string is larger than or equal to the length of the `search` string.
+	 */
+	while (str_len - i >= search_len) {
 		if (strncmp(str + i, search, search_len) == 0) {
 			strncat(res, str + str_pos, i - str_pos);
 			strcat(res, target);
@@ -63,7 +68,7 @@ int main() {
 		} else i++;
 	}
 
-	strncat(res, str + str_pos, i - str_pos);
+	strcat(res, str + str_pos);
 
 	printf("%s\n", res);
 }
