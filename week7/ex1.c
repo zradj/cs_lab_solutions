@@ -9,7 +9,7 @@
  *
  *	Solution:
  *
- *	Finding sum of the elements under the main diagonal means summing the elements in each row which has index less than than the row's number: j<i.
+ *	Sum of the elements under the main diagonal can be found by summing the elements in each row which has index less than than the row's number: j<i.
  *	In the first row (index=0) there is no element with index less than the row's number; therefore, we start from 2nd row (index=1)
  *	We can achieve this using two nested for loops, where the outer loop variable i starts from 1 and the inner loop variable j iterates from 0 to i-1.
  *	Inside the nested loops find the sum of the elements using sum variable
