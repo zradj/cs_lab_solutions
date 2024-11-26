@@ -4,11 +4,14 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given two integers `n` and `m` followed by a matrix of the size `n * m`. Find
+ *	the transpose of the given matrix.
  *	
  *	Solution:
  *	
- *	---
+ *	Transpose of a matrix is essentially the swap of the columns with the rows.
+ *	Thus, to solve this problem, we first read the matrix and write the elements row-by-row.
+ *	After that, we print each column in the form of rows.
  *
  */
 

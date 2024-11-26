@@ -4,11 +4,12 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given a matrix as in Problem 2 and a scalar, find the matrix resulting from
+ *	the multiplication of the original matrix by the scalar.
  *	
  *	Solution:
  *	
- *	---
+ *	After reading the matrix, we print it, multiplying each element by the given scalar.
  *
  */
 
