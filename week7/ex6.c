@@ -4,11 +4,14 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given a square matrix as in Problem 1. Check if it is an identity matrix or not.
  *	
  *	Solution:
  *	
- *	---
+ *	For each non-diagonal element of the matrix (`i` != `j`), we check if it is equal to 0.
+ *	For each diagonal element of the matrix (`i` == `j`), we check if it is equal to 1.
+ *	If at least one element does not comply with the conditions above, the matrix
+ *	is not an identity matrix.
  *
  */
 
