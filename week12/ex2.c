@@ -4,11 +4,14 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given an array of doubles. Reverse the array in place using pointers and print the
+ *	resulting array.
  *	
  *	Solution:
  *	
- *	---
+ *	Write a function that has two position variables: the first starts at the beginning of
+ *	the array, while the second starts at the end. Run a loop that swaps the elements using
+ *	the values of these variables, each time increasing the first one and decreasing the second one.
  *
  */
 

@@ -4,11 +4,11 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given a string. Check if it is a palindrome using pointers.
  *	
  *	Solution:
  *	
- *	---
+ *	Use the method from Exercise 2 to check whether the string is a palindrome.
  *
  */
 

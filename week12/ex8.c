@@ -4,11 +4,17 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given two sorted arrays. Merge these into a single sorted array.
  *	
  *	Solution:
  *	
- *	---
+ *	In this problem, we will use the Two Pointer Technique. Write a function
+ *	that has three position variables: first (`i`) for the first array, second (`j`) for the
+ *	second array, and third (`k`) for the resulting array. After that, run a loop
+ *	that compares the corresponding elements from both input arrays and writes the smaller element
+ *	to the resulting array. After that, increment the chosen input array's position variable and
+ *	the position variable of the resulting array. If any of the two input arrays is exhausted, copy
+ *	all the values from the remaining array.
  *
  */
 
@@ -18,6 +24,10 @@ void merge_sorted(int *dest, int *nums1, int *nums2, int len1, int len2) {
 	int i = 0, j = 0, k = 0;
 
 	while (i < len1 || j < len2) {
+		/*
+			If any of the input arrays is exhausted, pick the value from the other one.
+			Otherwise, pick the smaller element.
+		 */
 		if (i < len1 && (j >= len2 || *(nums1 + i) < *(nums2 + j))) {
 			*(dest + k) = *(nums1 + i);
 			i++;

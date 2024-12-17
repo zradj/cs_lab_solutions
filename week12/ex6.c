@@ -4,11 +4,13 @@
  *
  *	Problem:
  *	
- *	---
+ *	Given two strings. Concatenate these two strings without using
+ *	standard library function (`strlen`).
  *	
  *	Solution:
  *	
- *	---
+ *	Write a function that copies every character of the second string to
+ *	the end of the first string.
  *
  */
 
